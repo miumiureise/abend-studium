@@ -12,3 +12,11 @@
  .professor-card{align-items:center}
  .professor-text{min-width:0}
 }
+
+/* Keep listening and speaking next to the sentence; assess after the lesson. */
+.audio-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.study-card .practice{margin-top:12px;padding:0}
+.study-card .practice-controls label{margin-top:0;margin-bottom:6px}
+#lesson-assessment{margin-top:28px;padding:24px;background:#fffef9;border:1px solid var(--line);border-radius:9px}
+#lesson-assessment .rating{max-width:720px;margin:0 auto}
+@media(max-width:850px){#lesson-assessment{padding:20px 14px;margin-top:20px}}
