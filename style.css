@@ -20,3 +20,22 @@
 #lesson-assessment{margin-top:28px;padding:24px;background:#fffef9;border:1px solid var(--line);border-radius:9px}
 #lesson-assessment .rating{max-width:720px;margin:0 auto}
 @media(max-width:850px){#lesson-assessment{padding:20px 14px;margin-top:20px}}
+
+.chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:20px 0 28px}
+.chapter-choice{text-align:left;padding:20px;background:#fffef9;white-space:normal}
+.chapter-choice[aria-pressed="true"]{border:2px solid var(--gold);padding:19px;background:#f1efe5}
+.chapter-choice strong,.chapter-choice span{display:block}.chapter-choice strong{font:20px/1.4 Georgia,serif;margin-bottom:8px}
+.chapter-choice span{font-size:14px}.chapter-choice small{display:block;margin-top:8px}
+.chapter-choice progress{display:block;width:100%;height:7px;margin-top:14px;accent-color:var(--green)}
+#lit-german{font:clamp(25px,2.7vw,34px)/1.5 Georgia,serif;margin:25px 0 20px;overflow-wrap:anywhere}
+.lit-options{display:flex;gap:14px;flex-wrap:wrap}.lit-options label{flex:1;min-width:130px}
+#lit-reader>.toolbar label{margin:0}#lit-reader>.toolbar select{max-width:none;min-width:180px}
+#lit-section{white-space:normal}#lit-grammar-text p{white-space:pre-wrap;overflow-wrap:anywhere}
+#lit-grammar-text h3{font-size:16px;margin-top:22px}
+.lit-navigation{display:flex;justify-content:space-between;gap:12px;margin-top:25px;padding:24px;background:#fffef9;border:1px solid var(--line);border-radius:9px}
+#lit-resume-label{font-size:14px}#lit-position{margin-left:auto;font-size:14px}
+#lit-result:empty{display:none}
+@media(max-width:850px){.chapter-grid{grid-template-columns:1fr}.chapter-choice{padding:16px}.chapter-choice[aria-pressed="true"]{padding:15px}.lit-navigation{flex-wrap:wrap;padding:16px}.lit-navigation button{flex:1;font-size:14px;padding:10px 8px}#lit-complete{flex-basis:100%;order:3}#lit-position{margin-left:0}}
+
+.mobile-account-button{display:none}
+@media(max-width:850px){header{height:auto;min-height:58px;flex-wrap:wrap;gap:8px;padding:12px 0}.mobile-account-button{display:inline-block;font-size:12px;padding:5px 10px}}
